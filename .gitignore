@@ -70,6 +70,16 @@ MediaPlayer_autogen/
 /meta_types/
 qmltypes/
 
-# Прочие
+# Other
 app/
-
+tracks/
+'
+MediaPlayer
+appMediaPlayer.qmltypes
+appmediaplayer_qmltyperegistrations.cpp
+libappMediaPlayer.so
+libappMediaPlayerplugin.so
+mediaplayer_qmltyperegistrations.cpp
+qmldir
+appMediaPlayerplugin*
+appMediaPlayer_qml_module_dir_map.qrc
