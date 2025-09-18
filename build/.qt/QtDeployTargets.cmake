@@ -1,6 +1,0 @@
-set(__QT_DEPLOY_TARGET_MediaPlayer_FILE /home/rick/Code/MediaPlayer/build/MediaPlayer)
-set(__QT_DEPLOY_TARGET_MediaPlayer_TYPE EXECUTABLE)
-set(__QT_DEPLOY_TARGET_appMediaPlayer_FILE /home/rick/Code/MediaPlayer/build/libappMediaPlayer.so)
-set(__QT_DEPLOY_TARGET_appMediaPlayer_TYPE SHARED_LIBRARY)
-set(__QT_DEPLOY_TARGET_appMediaPlayerplugin_FILE /home/rick/Code/MediaPlayer/build/libappMediaPlayerplugin.so)
-set(__QT_DEPLOY_TARGET_appMediaPlayerplugin_TYPE MODULE_LIBRARY)

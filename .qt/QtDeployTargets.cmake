@@ -1,2 +1,0 @@
-set(__QT_DEPLOY_TARGET_MediaPlayer_FILE /home/rick/Code/MediaPlayer/MediaPlayer)
-set(__QT_DEPLOY_TARGET_MediaPlayer_TYPE EXECUTABLE)

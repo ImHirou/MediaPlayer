@@ -1,8 +1,0 @@
-module MediaPlayer
-linktarget appMediaPlayerplugin
-optional plugin appMediaPlayerplugin
-classname MediaPlayerPlugin
-typeinfo appMediaPlayer.qmltypes
-prefer :/MediaPlayer/
-Main 1.0 qml/Main.qml
-

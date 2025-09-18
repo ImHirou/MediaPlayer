@@ -1,8 +1,0 @@
--I
-/usr/lib/qt6/qml
---resource
-/home/rick/Code/MediaPlayer/build/.qt/rcc/qmake_MediaPlayer.qrc
---resource
-/home/rick/Code/MediaPlayer/build/.qt/rcc/appMediaPlayer_raw_qml_0.qrc
---module
-MediaPlayer

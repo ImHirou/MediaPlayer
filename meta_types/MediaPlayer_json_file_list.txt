@@ -1,3 +1,0 @@
-/home/rick/Code/MediaPlayer/MediaPlayer_autogen/include/../UVLADIE3JM/moc_Config.cpp.json
-/home/rick/Code/MediaPlayer/MediaPlayer_autogen/include/../UVLADIE3JM/moc_TrackInfo.cpp.json
-/home/rick/Code/MediaPlayer/MediaPlayer_autogen/include/../UVLADIE3JM/moc_TrackModel.cpp.json

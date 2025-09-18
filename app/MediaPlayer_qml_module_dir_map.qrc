@@ -1,6 +1,0 @@
-<RCC>
-  <qresource prefix="/">
-    <file alias="/qml/app">/home/rick/Code/MediaPlayer/app</file>
-
-  </qresource>
-</RCC>
