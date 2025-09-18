@@ -16,6 +16,8 @@ object_script.*.Debug
 *_plugin_import.cpp
 /.qmake.cache
 /.qmake.stash
+/.qt
+/.rcc
 *.pro.user
 *.pro.user.*
 *.qbs.user
@@ -52,3 +54,15 @@ compile_commands.json
 *creator.user*
 
 *_qmlcache.qrc
+
+# CMake
+/CMakeFiles
+/MediaPlayer_autogen
+/app
+/appMediaPlayer_autogen
+/appMediaPlayerplugin_autogen
+/build
+/meta_types
+/qmltypes
+`
+appMediaPlayer*
