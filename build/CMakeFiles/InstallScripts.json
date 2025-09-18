@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/rick/Code/MediaPlayer/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

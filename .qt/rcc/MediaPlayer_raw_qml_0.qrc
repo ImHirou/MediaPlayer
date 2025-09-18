@@ -1,0 +1,21 @@
+<RCC>
+  <qresource prefix="/qml/app/">
+    <file alias="app/app/app/app/qml/Main.qml">/home/rick/Code/MediaPlayer/app/app/app/app/qml/Main.qml</file>
+    <file alias="app/app/app/build/qml/Main.qml">/home/rick/Code/MediaPlayer/app/app/app/build/qml/Main.qml</file>
+    <file alias="app/app/app/qml/Main.qml">/home/rick/Code/MediaPlayer/app/app/app/qml/Main.qml</file>
+    <file alias="app/app/app/qml/RoundingShader.qml">/home/rick/Code/MediaPlayer/app/app/app/qml/RoundingShader.qml</file>
+    <file alias="app/app/build/qml/Main.qml">/home/rick/Code/MediaPlayer/app/app/build/qml/Main.qml</file>
+    <file alias="app/app/qml/Main.qml">/home/rick/Code/MediaPlayer/app/app/qml/Main.qml</file>
+    <file alias="app/app/qml/RoundingShader.qml">/home/rick/Code/MediaPlayer/app/app/qml/RoundingShader.qml</file>
+    <file alias="app/build/qml/Main.qml">/home/rick/Code/MediaPlayer/app/build/qml/Main.qml</file>
+    <file alias="app/qml/Main.qml">/home/rick/Code/MediaPlayer/app/qml/Main.qml</file>
+    <file alias="app/qml/RoundingShader.qml">/home/rick/Code/MediaPlayer/app/qml/RoundingShader.qml</file>
+    <file alias="app/qml/TrackComponent.qml">/home/rick/Code/MediaPlayer/app/qml/TrackComponent.qml</file>
+    <file alias="app/qml/TrackPanel/TrackPanel.qml">/home/rick/Code/MediaPlayer/app/qml/TrackPanel/TrackPanel.qml</file>
+    <file alias="build/qml/Main.qml">/home/rick/Code/MediaPlayer/build/qml/Main.qml</file>
+    <file alias="qml/Main.qml">/home/rick/Code/MediaPlayer/qml/Main.qml</file>
+    <file alias="qml/TrackComponent.qml">/home/rick/Code/MediaPlayer/qml/TrackComponent.qml</file>
+    <file alias="qml/TrackPanel/TrackPanel.qml">/home/rick/Code/MediaPlayer/qml/TrackPanel/TrackPanel.qml</file>
+  </qresource>
+</RCC>
+

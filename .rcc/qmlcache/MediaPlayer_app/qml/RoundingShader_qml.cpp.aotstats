@@ -1,0 +1,60 @@
+[
+    {
+        "moduleFiles": [
+            {
+                "entries": [
+                    {
+                        "codegenSuccessful": true,
+                        "column": 28,
+                        "durationMicroseconds": 139,
+                        "errorMessage": "",
+                        "functionName": "u_width",
+                        "line": 17
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 29,
+                        "durationMicroseconds": 84,
+                        "errorMessage": "",
+                        "functionName": "u_height",
+                        "line": 18
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 12,
+                        "durationMicroseconds": 27,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 20
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 13,
+                        "durationMicroseconds": 23,
+                        "errorMessage": "",
+                        "functionName": "height",
+                        "line": 21
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 23,
+                        "durationMicroseconds": 27,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 5
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 21,
+                        "durationMicroseconds": 51,
+                        "errorMessage": "",
+                        "functionName": "sourceItem",
+                        "line": 11
+                    }
+                ],
+                "filePath": "/home/rick/Code/MediaPlayer/app/qml/RoundingShader.qml"
+            }
+        ],
+        "moduleId": "app(MediaPlayer)"
+    }
+]

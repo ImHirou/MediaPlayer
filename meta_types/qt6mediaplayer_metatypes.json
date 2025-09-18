@@ -1,0 +1,287 @@
+[
+    {
+        "classes": [
+            {
+                "className": "Config",
+                "lineNumber": 15,
+                "methods": [
+                    {
+                        "access": "public",
+                        "index": 1,
+                        "name": "reloadConfig",
+                        "returnType": "void"
+                    }
+                ],
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "backgroundColor1",
+                        "notify": "dataChanged",
+                        "read": "backgroundColor1",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "name": "backgroundColor2",
+                        "notify": "dataChanged",
+                        "read": "backgroundColor2",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 2,
+                        "name": "backgroundColor3",
+                        "notify": "dataChanged",
+                        "read": "backgroundColor3",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 3,
+                        "name": "borderColor",
+                        "notify": "dataChanged",
+                        "read": "borderColor",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 4,
+                        "name": "mainTextColor",
+                        "notify": "dataChanged",
+                        "read": "mainTextColor",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 5,
+                        "name": "secondaryTextColor",
+                        "notify": "dataChanged",
+                        "read": "secondaryTextColor",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 6,
+                        "name": "primaryColor",
+                        "notify": "dataChanged",
+                        "read": "primaryColor",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 7,
+                        "name": "primaryHoverColor",
+                        "notify": "dataChanged",
+                        "read": "primaryHoverColor",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false
+                    }
+                ],
+                "qualifiedClassName": "Config",
+                "signals": [
+                    {
+                        "access": "public",
+                        "index": 0,
+                        "name": "dataChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "Config.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "className": "TrackInfo",
+                "lineNumber": 10,
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "name",
+                        "notify": "dataChanged",
+                        "read": "name",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "name": "artist",
+                        "notify": "dataChanged",
+                        "read": "artist",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 2,
+                        "name": "icon",
+                        "notify": "dataChanged",
+                        "read": "icon",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QUrl",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 3,
+                        "name": "index",
+                        "notify": "dataChanged",
+                        "read": "index",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "int",
+                        "user": false
+                    },
+                    {
+                        "constant": true,
+                        "designable": true,
+                        "final": false,
+                        "index": 4,
+                        "name": "path",
+                        "read": "path",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false
+                    }
+                ],
+                "qualifiedClassName": "TrackInfo",
+                "signals": [
+                    {
+                        "access": "public",
+                        "index": 0,
+                        "name": "dataChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "TrackInfo.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "className": "TrackModel",
+                "lineNumber": 9,
+                "methods": [
+                    {
+                        "access": "public",
+                        "index": 0,
+                        "isConst": true,
+                        "name": "count",
+                        "returnType": "int"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "row",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 1,
+                        "isConst": true,
+                        "name": "get",
+                        "returnType": "TrackInfo*"
+                    }
+                ],
+                "object": true,
+                "qualifiedClassName": "TrackModel",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QAbstractListModel"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "TrackModel.h",
+        "outputRevision": 69
+    }
+]

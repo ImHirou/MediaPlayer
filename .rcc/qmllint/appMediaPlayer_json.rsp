@@ -1,0 +1,12 @@
+--bare
+-I
+/home/rick/Code
+-I
+/usr/lib/qt6/qml
+--resource
+/home/rick/Code/MediaPlayer/.qt/rcc/qmake_MediaPlayer.qrc
+--resource
+/home/rick/Code/MediaPlayer/.qt/rcc/appMediaPlayer_raw_qml_0.qrc
+/home/rick/Code/MediaPlayer/qml/Main.qml
+--json
+/home/rick/Code/MediaPlayer/appMediaPlayer_qmllint.json

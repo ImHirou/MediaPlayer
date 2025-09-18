@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/">
+    <file alias="/MediaPlayer">/home/rick/Code/MediaPlayer/build</file>
+
+  </qresource>
+</RCC>
