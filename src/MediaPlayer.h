@@ -29,8 +29,13 @@ public:
     void                    addTrack(TrackInfo* trackInfo);
     void                    clearTracks();
 
-    TrackImageProvider*     getTrackImageProvider();
+    QGuiApplication*        getApplication();
     QQmlApplicationEngine*  getQmlEngine();
+    
+    TrackImageProvider*     getTrackImageProvider();
+    TrackModel*             getTrackList();
+
+    Config*                 getConfig();
 };
 
 #endif //MEDIA_PLAYER_H

@@ -4,6 +4,10 @@
 #include <QAbstractListModel>
 #include <QVector>
 
+class QString;
+
+class MediaPlayer;
+
 class TrackInfo;
 
 class TrackModel : public QAbstractListModel {
@@ -18,7 +22,7 @@ public:
         IndexRole
     };
 
-    explicit TrackModel(    QObject* parent = nullptr);
+    explicit TrackModel(    const QString& id, MediaPlayer* mediaPlayer);
 
     int                     rowCount(const QModelIndex& parent = QModelIndex()) const override;
     QVariant                data(const QModelIndex& index, int role = Qt::DisplayRole) const override;

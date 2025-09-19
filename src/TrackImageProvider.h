@@ -3,12 +3,15 @@
 
 #include <QQuickImageProvider>
 #include <QMap>
+
+class MediaPlayer;
+
 class QImage;
 class QString;
 
 class TrackImageProvider : public QQuickImageProvider {
 public:
-    TrackImageProvider();
+    TrackImageProvider(const QString& name, MediaPlayer* mediaPlayer);
     QMap<QString, QImage> m_images;
 
     virtual QImage requestImage(const QString& id, QSize *size, const QSize &requestedSize) override;

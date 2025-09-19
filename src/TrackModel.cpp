@@ -1,10 +1,18 @@
 #include "TrackModel.h"
+#include "MediaPlayer.h"
 #include "TrackInfo.h"
 
+#include <QGuiApplication>
+#include <QQmlApplicationEngine>
+#include <QQmlContext>
+
+#include <QString>
 #include <QVariantMap>
 
-TrackModel::TrackModel(QObject* parent) 
-    : QAbstractListModel(parent) {}
+TrackModel::TrackModel(const QString& name, MediaPlayer* mediaPlayer) 
+    : QAbstractListModel(mediaPlayer->getApplication()) {
+    mediaPlayer->getQmlEngine()->rootContext()->setContextProperty(name, this);
+}
 
 int TrackModel::rowCount(const QModelIndex& parent) const {
     if (parent.isValid()) return 0;

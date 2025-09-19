@@ -19,11 +19,9 @@ MediaPlayer::MediaPlayer(int argc, char* argv[]) {
 
     m_engine = new QQmlApplicationEngine();
     
-    m_trackImageProvider = new TrackImageProvider();
-    m_engine->addImageProvider("tracks", m_trackImageProvider);
+    m_trackImageProvider = new TrackImageProvider("tracks", this);
 
-    m_trackList = new TrackModel();
-    m_engine->rootContext()->setContextProperty("trackModel", m_trackList);   
+    m_trackList = new TrackModel("trackModel", this);
     
     m_config = new Config("./config.json", this, m_application);
 
@@ -48,10 +46,22 @@ void MediaPlayer::clearTracks() {
     m_trackList->clear();
 }
 
-TrackImageProvider* MediaPlayer::getTrackImageProvider() {
-    return m_trackImageProvider;
+QGuiApplication* MediaPlayer::getApplication() {
+    return m_application;
 }
 
 QQmlApplicationEngine* MediaPlayer::getQmlEngine() {
     return m_engine;
+}
+
+TrackImageProvider* MediaPlayer::getTrackImageProvider() {
+    return m_trackImageProvider;
+}
+
+TrackModel* MediaPlayer::getTrackList() {
+    return m_trackList;
+}
+
+Config* MediaPlayer::getConfig() {
+    return m_config;
 }
