@@ -58,6 +58,8 @@ CMakeFiles/
 build/
 *.autogen/
 *.rcc
+CMakeCache.txt
+Makefile
 
 # Qt
 .qt/
