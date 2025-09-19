@@ -60,6 +60,9 @@ import QtQuick.Controls
                         margins:    8
                     }
                     font.pixelSize: 20
+                    width: 200
+                    wrapMode: Text.Wrap
+                    horizontalAlignment: Text.AlignRight
                     color: config.mainTextColor
                     text: item.name
                 }
@@ -71,6 +74,9 @@ import QtQuick.Controls
                         margins:    8
                     }
                     font.pixelSize: 20
+                    width: 200
+                    wrapMode: Text.Wrap
+                    horizontalAlignment: Text.AlignRight
                     color: config.secondaryTextColor
                     text: item.artist
                 }

@@ -1,6 +1,7 @@
 {
     "trackDirs": [
-        "/home/rick/Code/MediaPlayer/tracks/"  
+        "/home/rick/Code/MediaPlayer/tracks/",
+        "/home/rick/Music/"
     ],
 
     "backgroundColor1": "#1d1d2f",
