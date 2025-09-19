@@ -38,7 +38,8 @@ private:
 public:
     Config(const QString& path, MediaPlayer* mediaPlayer, QObject* parent = nullptr);
    
-    void readFile(const QString& path);
+    void readFile();
+    void writeFile();
     void reload();
     void setup();
 

@@ -23,34 +23,30 @@
 Config::Config(const QString& path, MediaPlayer* mediaPlayer, QObject* parent) : 
     QObject(parent), m_mediaPlayer(mediaPlayer) {
     m_path = path;
-    readFile(m_path);
+    readFile();
 }
 
-void Config::readFile(const QString& path) {
-    QFileInfo fi(path);
+void Config::readFile() {
+    QFileInfo fi(m_path);
     if (!fi.exists()) {
-        QFile file(path);
+        QFile file(m_path);
         if (!file.open(QIODevice::WriteOnly)) {
             qDebug() << "Cannot create config file";
-        }
-        QJsonObject obj;
-        obj["backgroundColor1"]     = "#1d1d2f";
-        obj["backgroundColor2"]     = "#222234";
-        obj["backgroundColor3"]     = "#2f2f45";
-        obj["borderColor"]          = "#19192b";
-        obj["mainTextColor"]        = "#eeeecc";
-        obj["secondaryTextColor"]   = "#ccccaa";
-        obj["primaryColor"]         = "#922292";
-        obj["primaryHoverColor"]    = "#631163";
-        QJsonDocument doc(obj);
-        QByteArray data = doc.toJson(QJsonDocument::Indented);
-        file.write(data);
-        file.close();
+        } else {
+        m_json["backgroundColor1"]     = "#1d1d2f";
+        m_json["backgroundColor2"]     = "#222234";
+        m_json["backgroundColor3"]     = "#2f2f45";
+        m_json["borderColor"]          = "#19192b";
+        m_json["mainTextColor"]        = "#eeeecc";
+        m_json["secondaryTextColor"]   = "#ccccaa";
+        m_json["primaryColor"]         = "#922292";
+        m_json["primaryHoverColor"]    = "#631163";
         return;
+        }
     }
-    QFile configFile(path);
+    QFile configFile(m_path);
     if (!configFile.open(QIODevice::ReadOnly | QIODevice::Text)) {
-        qWarning() << "Can't open config file:" << path
+        qWarning() << "Can't open config file:" << m_path
                    << ", error:" << configFile.errorString();
         return;
     }
@@ -68,6 +64,19 @@ void Config::readFile(const QString& path) {
 
     m_json = doc.object();
 }
+
+void Config::writeFile() {
+    QFile file(m_path);
+    if (!file.open(QIODevice::WriteOnly)) {
+        qDebug() << "Cannot write config file";
+        return;
+    }
+    QJsonDocument doc(m_json);
+    QByteArray data = doc.toJson(QJsonDocument::Indented);
+    file.write(data);
+    file.close();
+}
+
 void Config::reload() {
     m_musicDirs.clear();
 
@@ -142,7 +151,7 @@ QColor Config::primaryHoverColor() const {
 }
 
 void Config::reloadConfig() {
-    readFile(m_path);
+    readFile();
     reload();
     setup();
 }
