@@ -68,7 +68,7 @@ ApplicationWindow {
     }
 
     function playTrack(index) {
-        console.log(trackModel.count())
+        if (index == currentIndex) return
         if (index < 0) currentIndex = trackModel.count() - 1
         else if (index >= trackModel.count()) currentIndex = 0
         else currentIndex = index
