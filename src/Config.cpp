@@ -29,7 +29,23 @@ Config::Config(const QString& path, MediaPlayer* mediaPlayer, QObject* parent) :
 void Config::readFile(const QString& path) {
     QFileInfo fi(path);
     if (!fi.exists()) {
-        qWarning() << "Config file doesn't exist:" << path;
+        QFile file(path);
+        if (!file.open(QIODevice::WriteOnly)) {
+            qDebug << "Cannot create config file";
+        }
+        QJsonObject obj;
+        obj["backgroundColor1"]     = "#1d1d2f";
+        obj["backgroundColor2"]     = "#222234";
+        obj["backgroundColor3"]     = "#2f2f45";
+        obj["borderColor"]          = "#19192b";
+        obj["mainTextColor"]        = "#eeeecc";
+        obj["secondaryTextColor"]   = "#ccccaa";
+        obj["primaryColor"]         = "#922292";
+        obj["primaryHoverColor"]    = "#631163";
+        QJsonDocument doc(obj);
+        QByteArray data = doc.toJson(QJsonDocument::Intended);
+        file.write(data);
+        file.close();
         return;
     }
     QFile configFile(path);
