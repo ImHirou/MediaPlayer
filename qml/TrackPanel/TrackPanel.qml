@@ -104,8 +104,22 @@ Item {
             Connections {
                 target: previousButton
                 onClicked: {
-                    5playTrack(currentIndex-1)
+                    playTrack(currentIndex-1)
                 }
+            }
+        }
+
+        Button {
+            id: playButton
+            anchors {
+                bottom: parent.bottom
+                horizontalCenter: parent.horizontalCenter
+            }
+            width: 40
+            height: 40
+            onClicked: {
+                if (audioPlayer.playing) audioPlayer.stop()
+                else audioPlayer.play()
             }
         }
     }

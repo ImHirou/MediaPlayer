@@ -31,7 +31,7 @@ void Config::readFile(const QString& path) {
     if (!fi.exists()) {
         QFile file(path);
         if (!file.open(QIODevice::WriteOnly)) {
-            qDebug << "Cannot create config file";
+            qDebug() << "Cannot create config file";
         }
         QJsonObject obj;
         obj["backgroundColor1"]     = "#1d1d2f";
@@ -43,7 +43,7 @@ void Config::readFile(const QString& path) {
         obj["primaryColor"]         = "#922292";
         obj["primaryHoverColor"]    = "#631163";
         QJsonDocument doc(obj);
-        QByteArray data = doc.toJson(QJsonDocument::Intended);
+        QByteArray data = doc.toJson(QJsonDocument::Indented);
         file.write(data);
         file.close();
         return;

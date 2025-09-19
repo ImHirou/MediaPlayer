@@ -396,6 +396,54 @@ MediaPlayer_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MediaPlayer.dir/build.make CMakeFiles/MediaPlayer.dir/.qt/rcc/qrc_qmake_app.cpp.s
 .PHONY : .qt/rcc/qrc_qmake_app.cpp.s
 
+.rcc/qmlcache/MediaPlayer_app/app/app/app/app/qml/Main_qml.o: .rcc/qmlcache/MediaPlayer_app/app/app/app/app/qml/Main_qml.cpp.o
+.PHONY : .rcc/qmlcache/MediaPlayer_app/app/app/app/app/qml/Main_qml.o
+
+# target to build an object file
+.rcc/qmlcache/MediaPlayer_app/app/app/app/app/qml/Main_qml.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MediaPlayer.dir/build.make CMakeFiles/MediaPlayer.dir/.rcc/qmlcache/MediaPlayer_app/app/app/app/app/qml/Main_qml.cpp.o
+.PHONY : .rcc/qmlcache/MediaPlayer_app/app/app/app/app/qml/Main_qml.cpp.o
+
+.rcc/qmlcache/MediaPlayer_app/app/app/app/app/qml/Main_qml.i: .rcc/qmlcache/MediaPlayer_app/app/app/app/app/qml/Main_qml.cpp.i
+.PHONY : .rcc/qmlcache/MediaPlayer_app/app/app/app/app/qml/Main_qml.i
+
+# target to preprocess a source file
+.rcc/qmlcache/MediaPlayer_app/app/app/app/app/qml/Main_qml.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MediaPlayer.dir/build.make CMakeFiles/MediaPlayer.dir/.rcc/qmlcache/MediaPlayer_app/app/app/app/app/qml/Main_qml.cpp.i
+.PHONY : .rcc/qmlcache/MediaPlayer_app/app/app/app/app/qml/Main_qml.cpp.i
+
+.rcc/qmlcache/MediaPlayer_app/app/app/app/app/qml/Main_qml.s: .rcc/qmlcache/MediaPlayer_app/app/app/app/app/qml/Main_qml.cpp.s
+.PHONY : .rcc/qmlcache/MediaPlayer_app/app/app/app/app/qml/Main_qml.s
+
+# target to generate assembly for a file
+.rcc/qmlcache/MediaPlayer_app/app/app/app/app/qml/Main_qml.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MediaPlayer.dir/build.make CMakeFiles/MediaPlayer.dir/.rcc/qmlcache/MediaPlayer_app/app/app/app/app/qml/Main_qml.cpp.s
+.PHONY : .rcc/qmlcache/MediaPlayer_app/app/app/app/app/qml/Main_qml.cpp.s
+
+.rcc/qmlcache/MediaPlayer_app/app/app/app/build/qml/Main_qml.o: .rcc/qmlcache/MediaPlayer_app/app/app/app/build/qml/Main_qml.cpp.o
+.PHONY : .rcc/qmlcache/MediaPlayer_app/app/app/app/build/qml/Main_qml.o
+
+# target to build an object file
+.rcc/qmlcache/MediaPlayer_app/app/app/app/build/qml/Main_qml.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MediaPlayer.dir/build.make CMakeFiles/MediaPlayer.dir/.rcc/qmlcache/MediaPlayer_app/app/app/app/build/qml/Main_qml.cpp.o
+.PHONY : .rcc/qmlcache/MediaPlayer_app/app/app/app/build/qml/Main_qml.cpp.o
+
+.rcc/qmlcache/MediaPlayer_app/app/app/app/build/qml/Main_qml.i: .rcc/qmlcache/MediaPlayer_app/app/app/app/build/qml/Main_qml.cpp.i
+.PHONY : .rcc/qmlcache/MediaPlayer_app/app/app/app/build/qml/Main_qml.i
+
+# target to preprocess a source file
+.rcc/qmlcache/MediaPlayer_app/app/app/app/build/qml/Main_qml.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MediaPlayer.dir/build.make CMakeFiles/MediaPlayer.dir/.rcc/qmlcache/MediaPlayer_app/app/app/app/build/qml/Main_qml.cpp.i
+.PHONY : .rcc/qmlcache/MediaPlayer_app/app/app/app/build/qml/Main_qml.cpp.i
+
+.rcc/qmlcache/MediaPlayer_app/app/app/app/build/qml/Main_qml.s: .rcc/qmlcache/MediaPlayer_app/app/app/app/build/qml/Main_qml.cpp.s
+.PHONY : .rcc/qmlcache/MediaPlayer_app/app/app/app/build/qml/Main_qml.s
+
+# target to generate assembly for a file
+.rcc/qmlcache/MediaPlayer_app/app/app/app/build/qml/Main_qml.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MediaPlayer.dir/build.make CMakeFiles/MediaPlayer.dir/.rcc/qmlcache/MediaPlayer_app/app/app/app/build/qml/Main_qml.cpp.s
+.PHONY : .rcc/qmlcache/MediaPlayer_app/app/app/app/build/qml/Main_qml.cpp.s
+
 .rcc/qmlcache/MediaPlayer_app/app/app/app/qml/Main_qml.o: .rcc/qmlcache/MediaPlayer_app/app/app/app/qml/Main_qml.cpp.o
 .PHONY : .rcc/qmlcache/MediaPlayer_app/app/app/app/qml/Main_qml.o
 
@@ -419,6 +467,30 @@ MediaPlayer_autogen/fast:
 .rcc/qmlcache/MediaPlayer_app/app/app/app/qml/Main_qml.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MediaPlayer.dir/build.make CMakeFiles/MediaPlayer.dir/.rcc/qmlcache/MediaPlayer_app/app/app/app/qml/Main_qml.cpp.s
 .PHONY : .rcc/qmlcache/MediaPlayer_app/app/app/app/qml/Main_qml.cpp.s
+
+.rcc/qmlcache/MediaPlayer_app/app/app/app/qml/RoundingShader_qml.o: .rcc/qmlcache/MediaPlayer_app/app/app/app/qml/RoundingShader_qml.cpp.o
+.PHONY : .rcc/qmlcache/MediaPlayer_app/app/app/app/qml/RoundingShader_qml.o
+
+# target to build an object file
+.rcc/qmlcache/MediaPlayer_app/app/app/app/qml/RoundingShader_qml.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MediaPlayer.dir/build.make CMakeFiles/MediaPlayer.dir/.rcc/qmlcache/MediaPlayer_app/app/app/app/qml/RoundingShader_qml.cpp.o
+.PHONY : .rcc/qmlcache/MediaPlayer_app/app/app/app/qml/RoundingShader_qml.cpp.o
+
+.rcc/qmlcache/MediaPlayer_app/app/app/app/qml/RoundingShader_qml.i: .rcc/qmlcache/MediaPlayer_app/app/app/app/qml/RoundingShader_qml.cpp.i
+.PHONY : .rcc/qmlcache/MediaPlayer_app/app/app/app/qml/RoundingShader_qml.i
+
+# target to preprocess a source file
+.rcc/qmlcache/MediaPlayer_app/app/app/app/qml/RoundingShader_qml.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MediaPlayer.dir/build.make CMakeFiles/MediaPlayer.dir/.rcc/qmlcache/MediaPlayer_app/app/app/app/qml/RoundingShader_qml.cpp.i
+.PHONY : .rcc/qmlcache/MediaPlayer_app/app/app/app/qml/RoundingShader_qml.cpp.i
+
+.rcc/qmlcache/MediaPlayer_app/app/app/app/qml/RoundingShader_qml.s: .rcc/qmlcache/MediaPlayer_app/app/app/app/qml/RoundingShader_qml.cpp.s
+.PHONY : .rcc/qmlcache/MediaPlayer_app/app/app/app/qml/RoundingShader_qml.s
+
+# target to generate assembly for a file
+.rcc/qmlcache/MediaPlayer_app/app/app/app/qml/RoundingShader_qml.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MediaPlayer.dir/build.make CMakeFiles/MediaPlayer.dir/.rcc/qmlcache/MediaPlayer_app/app/app/app/qml/RoundingShader_qml.cpp.s
+.PHONY : .rcc/qmlcache/MediaPlayer_app/app/app/app/qml/RoundingShader_qml.cpp.s
 
 .rcc/qmlcache/MediaPlayer_app/app/app/build/qml/Main_qml.o: .rcc/qmlcache/MediaPlayer_app/app/app/build/qml/Main_qml.cpp.o
 .PHONY : .rcc/qmlcache/MediaPlayer_app/app/app/build/qml/Main_qml.o
@@ -563,6 +635,54 @@ MediaPlayer_autogen/fast:
 .rcc/qmlcache/MediaPlayer_app/app/qml/RoundingShader_qml.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MediaPlayer.dir/build.make CMakeFiles/MediaPlayer.dir/.rcc/qmlcache/MediaPlayer_app/app/qml/RoundingShader_qml.cpp.s
 .PHONY : .rcc/qmlcache/MediaPlayer_app/app/qml/RoundingShader_qml.cpp.s
+
+.rcc/qmlcache/MediaPlayer_app/app/qml/TrackComponent_qml.o: .rcc/qmlcache/MediaPlayer_app/app/qml/TrackComponent_qml.cpp.o
+.PHONY : .rcc/qmlcache/MediaPlayer_app/app/qml/TrackComponent_qml.o
+
+# target to build an object file
+.rcc/qmlcache/MediaPlayer_app/app/qml/TrackComponent_qml.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MediaPlayer.dir/build.make CMakeFiles/MediaPlayer.dir/.rcc/qmlcache/MediaPlayer_app/app/qml/TrackComponent_qml.cpp.o
+.PHONY : .rcc/qmlcache/MediaPlayer_app/app/qml/TrackComponent_qml.cpp.o
+
+.rcc/qmlcache/MediaPlayer_app/app/qml/TrackComponent_qml.i: .rcc/qmlcache/MediaPlayer_app/app/qml/TrackComponent_qml.cpp.i
+.PHONY : .rcc/qmlcache/MediaPlayer_app/app/qml/TrackComponent_qml.i
+
+# target to preprocess a source file
+.rcc/qmlcache/MediaPlayer_app/app/qml/TrackComponent_qml.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MediaPlayer.dir/build.make CMakeFiles/MediaPlayer.dir/.rcc/qmlcache/MediaPlayer_app/app/qml/TrackComponent_qml.cpp.i
+.PHONY : .rcc/qmlcache/MediaPlayer_app/app/qml/TrackComponent_qml.cpp.i
+
+.rcc/qmlcache/MediaPlayer_app/app/qml/TrackComponent_qml.s: .rcc/qmlcache/MediaPlayer_app/app/qml/TrackComponent_qml.cpp.s
+.PHONY : .rcc/qmlcache/MediaPlayer_app/app/qml/TrackComponent_qml.s
+
+# target to generate assembly for a file
+.rcc/qmlcache/MediaPlayer_app/app/qml/TrackComponent_qml.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MediaPlayer.dir/build.make CMakeFiles/MediaPlayer.dir/.rcc/qmlcache/MediaPlayer_app/app/qml/TrackComponent_qml.cpp.s
+.PHONY : .rcc/qmlcache/MediaPlayer_app/app/qml/TrackComponent_qml.cpp.s
+
+.rcc/qmlcache/MediaPlayer_app/app/qml/TrackPanel/TrackPanel_qml.o: .rcc/qmlcache/MediaPlayer_app/app/qml/TrackPanel/TrackPanel_qml.cpp.o
+.PHONY : .rcc/qmlcache/MediaPlayer_app/app/qml/TrackPanel/TrackPanel_qml.o
+
+# target to build an object file
+.rcc/qmlcache/MediaPlayer_app/app/qml/TrackPanel/TrackPanel_qml.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MediaPlayer.dir/build.make CMakeFiles/MediaPlayer.dir/.rcc/qmlcache/MediaPlayer_app/app/qml/TrackPanel/TrackPanel_qml.cpp.o
+.PHONY : .rcc/qmlcache/MediaPlayer_app/app/qml/TrackPanel/TrackPanel_qml.cpp.o
+
+.rcc/qmlcache/MediaPlayer_app/app/qml/TrackPanel/TrackPanel_qml.i: .rcc/qmlcache/MediaPlayer_app/app/qml/TrackPanel/TrackPanel_qml.cpp.i
+.PHONY : .rcc/qmlcache/MediaPlayer_app/app/qml/TrackPanel/TrackPanel_qml.i
+
+# target to preprocess a source file
+.rcc/qmlcache/MediaPlayer_app/app/qml/TrackPanel/TrackPanel_qml.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MediaPlayer.dir/build.make CMakeFiles/MediaPlayer.dir/.rcc/qmlcache/MediaPlayer_app/app/qml/TrackPanel/TrackPanel_qml.cpp.i
+.PHONY : .rcc/qmlcache/MediaPlayer_app/app/qml/TrackPanel/TrackPanel_qml.cpp.i
+
+.rcc/qmlcache/MediaPlayer_app/app/qml/TrackPanel/TrackPanel_qml.s: .rcc/qmlcache/MediaPlayer_app/app/qml/TrackPanel/TrackPanel_qml.cpp.s
+.PHONY : .rcc/qmlcache/MediaPlayer_app/app/qml/TrackPanel/TrackPanel_qml.s
+
+# target to generate assembly for a file
+.rcc/qmlcache/MediaPlayer_app/app/qml/TrackPanel/TrackPanel_qml.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MediaPlayer.dir/build.make CMakeFiles/MediaPlayer.dir/.rcc/qmlcache/MediaPlayer_app/app/qml/TrackPanel/TrackPanel_qml.cpp.s
+.PHONY : .rcc/qmlcache/MediaPlayer_app/app/qml/TrackPanel/TrackPanel_qml.cpp.s
 
 .rcc/qmlcache/MediaPlayer_app/build/qml/Main_qml.o: .rcc/qmlcache/MediaPlayer_app/build/qml/Main_qml.cpp.o
 .PHONY : .rcc/qmlcache/MediaPlayer_app/build/qml/Main_qml.o
@@ -1029,9 +1149,18 @@ help:
 	@echo "... .qt/rcc/qrc_qmake_app.o"
 	@echo "... .qt/rcc/qrc_qmake_app.i"
 	@echo "... .qt/rcc/qrc_qmake_app.s"
+	@echo "... .rcc/qmlcache/MediaPlayer_app/app/app/app/app/qml/Main_qml.o"
+	@echo "... .rcc/qmlcache/MediaPlayer_app/app/app/app/app/qml/Main_qml.i"
+	@echo "... .rcc/qmlcache/MediaPlayer_app/app/app/app/app/qml/Main_qml.s"
+	@echo "... .rcc/qmlcache/MediaPlayer_app/app/app/app/build/qml/Main_qml.o"
+	@echo "... .rcc/qmlcache/MediaPlayer_app/app/app/app/build/qml/Main_qml.i"
+	@echo "... .rcc/qmlcache/MediaPlayer_app/app/app/app/build/qml/Main_qml.s"
 	@echo "... .rcc/qmlcache/MediaPlayer_app/app/app/app/qml/Main_qml.o"
 	@echo "... .rcc/qmlcache/MediaPlayer_app/app/app/app/qml/Main_qml.i"
 	@echo "... .rcc/qmlcache/MediaPlayer_app/app/app/app/qml/Main_qml.s"
+	@echo "... .rcc/qmlcache/MediaPlayer_app/app/app/app/qml/RoundingShader_qml.o"
+	@echo "... .rcc/qmlcache/MediaPlayer_app/app/app/app/qml/RoundingShader_qml.i"
+	@echo "... .rcc/qmlcache/MediaPlayer_app/app/app/app/qml/RoundingShader_qml.s"
 	@echo "... .rcc/qmlcache/MediaPlayer_app/app/app/build/qml/Main_qml.o"
 	@echo "... .rcc/qmlcache/MediaPlayer_app/app/app/build/qml/Main_qml.i"
 	@echo "... .rcc/qmlcache/MediaPlayer_app/app/app/build/qml/Main_qml.s"
@@ -1050,6 +1179,12 @@ help:
 	@echo "... .rcc/qmlcache/MediaPlayer_app/app/qml/RoundingShader_qml.o"
 	@echo "... .rcc/qmlcache/MediaPlayer_app/app/qml/RoundingShader_qml.i"
 	@echo "... .rcc/qmlcache/MediaPlayer_app/app/qml/RoundingShader_qml.s"
+	@echo "... .rcc/qmlcache/MediaPlayer_app/app/qml/TrackComponent_qml.o"
+	@echo "... .rcc/qmlcache/MediaPlayer_app/app/qml/TrackComponent_qml.i"
+	@echo "... .rcc/qmlcache/MediaPlayer_app/app/qml/TrackComponent_qml.s"
+	@echo "... .rcc/qmlcache/MediaPlayer_app/app/qml/TrackPanel/TrackPanel_qml.o"
+	@echo "... .rcc/qmlcache/MediaPlayer_app/app/qml/TrackPanel/TrackPanel_qml.i"
+	@echo "... .rcc/qmlcache/MediaPlayer_app/app/qml/TrackPanel/TrackPanel_qml.s"
 	@echo "... .rcc/qmlcache/MediaPlayer_app/build/qml/Main_qml.o"
 	@echo "... .rcc/qmlcache/MediaPlayer_app/build/qml/Main_qml.i"
 	@echo "... .rcc/qmlcache/MediaPlayer_app/build/qml/Main_qml.s"
