@@ -41,6 +41,7 @@ void Config::readFile() {
         m_json["secondaryTextColor"]   = "#ccccaa";
         m_json["primaryColor"]         = "#922292";
         m_json["primaryHoverColor"]    = "#631163";
+        writeFile();
         return;
         }
     }

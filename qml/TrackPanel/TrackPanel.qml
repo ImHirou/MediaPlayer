@@ -1,5 +1,6 @@
 import QtQuick
 import QtQuick.Controls
+import app
 
 Item {
     id: panel
@@ -108,19 +109,9 @@ Item {
                 }
             }
         }
-
-        Button {
+        
+        PlayButton {
             id: playButton
-            anchors {
-                bottom: parent.bottom
-                horizontalCenter: parent.horizontalCenter
-            }
-            width: 40
-            height: 40
-            onClicked: {
-                if (audioPlayer.playing) audioPlayer.stop()
-                else audioPlayer.play()
-            }
         }
     }
 }
