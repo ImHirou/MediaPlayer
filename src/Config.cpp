@@ -33,14 +33,18 @@ void Config::readFile() {
         if (!file.open(QIODevice::WriteOnly)) {
             qDebug() << "Cannot create config file";
         } else {
-        m_json["backgroundColor1"]     = "#1d1d2f";
-        m_json["backgroundColor2"]     = "#222234";
-        m_json["backgroundColor3"]     = "#2f2f45";
-        m_json["borderColor"]          = "#19192b";
-        m_json["mainTextColor"]        = "#eeeecc";
-        m_json["secondaryTextColor"]   = "#ccccaa";
-        m_json["primaryColor"]         = "#922292";
-        m_json["primaryHoverColor"]    = "#631163";
+        QString musicDirectory = QDir::homePath() + "/Music"; 
+        QJsonArray musicArray;
+        musicArray.push_back(musicDirectory);
+        m_json["trackDirs"]             = musicArray;
+        m_json["backgroundColor1"]      = "#1d1d2f";
+        m_json["backgroundColor2"]      = "#222234";
+        m_json["backgroundColor3"]      = "#2f2f45";
+        m_json["borderColor"]           = "#19192b";
+        m_json["mainTextColor"]         = "#eeeecc";
+        m_json["secondaryTextColor"]    = "#ccccaa";
+        m_json["primaryColor"]          = "#922292";
+        m_json["primaryHoverColor"]     = "#631163";
         writeFile();
         return;
         }
