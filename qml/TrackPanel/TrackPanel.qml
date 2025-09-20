@@ -77,39 +77,15 @@ Item {
                 }
             }
         }
-        
-        Button {
+
+        NextButton {
             id: nextButton
-            anchors {
-                bottom: parent.bottom
-                right:  parent.right
-            }
-            width:  40
-            height: 40
-            Connections {
-                target: nextButton
-                onClicked: {
-                    playTrack(currentIndex+1)
-                }
-            }
         }
 
-        Button {
+        PreviousButton {
             id: previousButton
-            anchors {
-                bottom: parent.bottom
-                left:   parent.left
-            }
-            width:  40
-            height: 40
-            Connections {
-                target: previousButton
-                onClicked: {
-                    playTrack(currentIndex-1)
-                }
-            }
         }
-        
+
         PlayButton {
             id: playButton
         }
