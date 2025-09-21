@@ -20,6 +20,11 @@ ApplicationWindow {
             if (repeat) audioPlayer.loops = MediaPlayer.Infinite
             else audioPlayer.loops = 1
         }
+
+        onMediaStatusChanged: {
+            if (mediaStatus == MediaPlayer.EndOfMedia)
+                playTrack(currentIndex+1)
+        }
     }
 
     Button {
