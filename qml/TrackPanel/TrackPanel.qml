@@ -46,6 +46,10 @@ Item {
                     audioPlayer.audioOutput.volume = volumeSlider.value
                 }
             }
+            handle {
+                width: 0
+                height: 0
+            }
         }
 
         Slider {
@@ -58,13 +62,10 @@ Item {
             width:  200
             from:   0
             to:     audioPlayer.duration
+            live:   false
             
-            Connections { 
-                target: positionSlider
-                onMoved: {
-                    audioPlayer.position = positionSlider.value
-                }
-            }
+            onPressedChanged:
+                if(!pressed) audioPlayer.position = positionSlider.value
 
             Connections {
                 target: audioPlayer
@@ -74,6 +75,24 @@ Item {
                 onPositionChanged: {
                     if (!positionSlider.pressed) 
                         positionSlider.value = audioPlayer.position
+                }
+            }
+
+            handle {
+                width: 0
+                height: 0
+            }
+            background: Rectangle {
+                implicitHeight: 6
+                radius: height/2
+                color: config.backgroundColor3
+
+                Rectangle {
+                    width: parent.width * positionSlider.position
+                    height: parent.height
+                    radius: parent.radius
+                    color: config.primaryColor
+                    clip: true
                 }
             }
         }

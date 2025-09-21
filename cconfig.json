@@ -1,0 +1,18 @@
+{
+    "trackDirs": [
+        "/home/rick/Code/MediaPlayer/tracks/",
+        "/home/rick/Music/"
+    ],
+
+    "backgroundColor1": "#1d1d2f",
+    "backgroundColor2": "#222234",
+    "backgroundColor3": "#2f2f45",
+    
+    "borderColor": "#19192b",
+
+    "mainTextColor": "#eeeecc",
+    "secondaryTextColor": "#ccccaa",
+
+    "primaryColor": "#922292",
+    "primaryHoverColor": "#631163"
+}
