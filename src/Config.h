@@ -22,6 +22,7 @@ Q_PROPERTY(QColor mainTextColor         READ mainTextColor      NOTIFY dataChang
 Q_PROPERTY(QColor secondaryTextColor    READ secondaryTextColor NOTIFY dataChanged)
 Q_PROPERTY(QColor primaryColor          READ primaryColor       NOTIFY dataChanged)
 Q_PROPERTY(QColor primaryHoverColor     READ primaryHoverColor  NOTIFY dataChanged)
+Q_PROPERTY(qreal  volume                READ volume             WRITE volume NOTIFY dataChanged)
 private:
     MediaPlayer*    m_mediaPlayer;
     QString         m_path;
@@ -35,11 +36,11 @@ private:
     QColor          m_secondaryTextColor;
     QColor          m_primaryColor;
     QColor          m_primaryHoverColor;
+    qreal           m_volume;
 public:
     Config(const QString& path, MediaPlayer* mediaPlayer, QObject* parent = nullptr);
    
     void readFile();
-    void writeFile();
     void reload();
     void setup();
 
@@ -51,7 +52,11 @@ public:
     QColor secondaryTextColor() const;
     QColor primaryColor() const;
     QColor primaryHoverColor() const;
+    qreal  volume() const;
+    
+    void volume(qreal value);
 
+    Q_INVOKABLE void writeFile(bool overwriteJson = false);
     Q_INVOKABLE void reloadConfig();
 signals:
     void dataChanged();

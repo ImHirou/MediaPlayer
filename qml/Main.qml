@@ -13,7 +13,7 @@ ApplicationWindow {
         property bool repeat: false
 
         audioOutput: AudioOutput {
-            volume: 1
+            volume: config.volume 
         }
 
         onRepeatChanged: {

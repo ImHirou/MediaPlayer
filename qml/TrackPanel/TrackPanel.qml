@@ -39,12 +39,13 @@ Item {
             orientation: Qt.Vertical
             from:   0.
             to:     1.
-            value:  1.
-            Connections {
-                target: volumeSlider
-                onMoved: {
-                    audioPlayer.audioOutput.volume = volumeSlider.value
-                }
+            value:  config.volume
+            onMoved: {
+                config.volume = volumeSlider.value
+                audioPlayer.audioOutput.volume = volumeSlider.value
+            }
+            onPressedChanged: {
+                if (!pressed) config.writeFile(true)
             }
             handle {
                 width: 0

@@ -37,6 +37,7 @@ void Config::readFile() {
         QJsonArray musicArray;
         musicArray.push_back(musicDirectory);
         m_json["trackDirs"]             = musicArray;
+        m_json["volume"]                = 1.0;
         m_json["backgroundColor1"]      = "#1d1d2f";
         m_json["backgroundColor2"]      = "#222234";
         m_json["backgroundColor3"]      = "#2f2f45";
@@ -70,7 +71,18 @@ void Config::readFile() {
     m_json = doc.object();
 }
 
-void Config::writeFile() {
+void Config::writeFile(bool overwriteJson) {
+    if (overwriteJson) {
+        m_json["volume"]                = m_volume;
+        m_json["backgroundColor1"]      = m_backgroundColor1.name(QColor::HexRgb);
+        m_json["backgroundColor2"]      = m_backgroundColor2.name(QColor::HexRgb);
+        m_json["backgroundColor3"]      = m_backgroundColor3.name(QColor::HexRgb);
+        m_json["borderColor"]           = m_borderColor.name(QColor::HexRgb);
+        m_json["mainTextColor"]         = m_mainTextColor.name(QColor::HexRgb);
+        m_json["secondaryTextColor"]    = m_secondaryTextColor.name(QColor::HexRgb);
+        m_json["primaryColor"]          = m_primaryColor.name(QColor::HexRgb);
+        m_json["primaryHoverColor"]     = m_primaryHoverColor.name(QColor::HexRgb);
+    }
     QFile file(m_path);
     if (!file.open(QIODevice::WriteOnly)) {
         qDebug() << "Cannot write config file";
@@ -94,6 +106,7 @@ void Config::reload() {
         m_musicDirs.push_back(directory);
     }
 
+    m_volume                = m_json["volume"].toDouble();
     m_backgroundColor1      = QColor(m_json["backgroundColor1"].toString());
     m_backgroundColor2      = QColor(m_json["backgroundColor2"].toString());
     m_backgroundColor3      = QColor(m_json["backgroundColor3"].toString());
@@ -153,6 +166,14 @@ QColor Config::primaryColor() const {
 
 QColor Config::primaryHoverColor() const {
     return m_primaryHoverColor;
+}
+
+qreal Config::volume() const {
+    return m_volume;
+}
+
+void Config::volume(qreal value) {
+    m_volume = value;
 }
 
 void Config::reloadConfig() {
