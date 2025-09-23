@@ -47,13 +47,8 @@ Item {
             onPressedChanged: {
                 if (!pressed) config.writeFile(true)
             }
-            handle {
-                width: 0
-                height: 0
-            }
         }
-
-        Slider {
+        BetterSlider {
             id: positionSlider
             anchors {
                 horizontalCenter:   parent.horizontalCenter
@@ -76,24 +71,6 @@ Item {
                 onPositionChanged: {
                     if (!positionSlider.pressed) 
                         positionSlider.value = audioPlayer.position
-                }
-            }
-
-            handle {
-                width: 0
-                height: 0
-            }
-            background: Rectangle {
-                implicitHeight: 6
-                radius: height/2
-                color: config.backgroundColor3
-
-                Rectangle {
-                    width: parent.width * positionSlider.position
-                    height: parent.height
-                    radius: parent.radius
-                    color: config.primaryColor
-                    clip: true
                 }
             }
         }
