@@ -27,16 +27,6 @@ ApplicationWindow {
         }
     }
 
-    Button {
-        anchors {
-            bottom: parent.bottom
-            horizontalCenter: parent.horizontalCenter
-        }
-        width: 80
-        height: 80
-        onClicked: audioPlayer.repeat = !audioPlayer.repeat
-    }
-
     Rectangle {
         id: trackListBackground
         anchors {

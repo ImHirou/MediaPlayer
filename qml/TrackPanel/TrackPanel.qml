@@ -98,6 +98,32 @@ Item {
             }
         }
 
+        Rectangle {
+            id: repeatButton
+            anchors {
+                bottom: parent.bottom
+                horizontalCenter: parent.horizontalCenter
+            }
+            width: 32
+            height: 32
+            radius: 8
+            color: config.backgroundColor3
+
+            MouseArea {
+                anchors.fill: parent
+                hoverEnabled: true
+                Connections {
+                    onClicked: {
+                        audioPlayer.repeat = !audioPlayer.repeat
+                    }
+                    onEntered: repeatButton.color = config.primaryHoverColor
+                    onExited: {
+                        repeatButton.color = audioPlayer.repeat ? config.primaryColor : config.backgroundColor3
+                    }
+                }
+            }
+        }
+
         NextButton {
             id: nextButton
         }
