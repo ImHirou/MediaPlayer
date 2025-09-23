@@ -124,6 +124,28 @@ Item {
             }
         }
 
+        Text {
+            id: trackTime
+            anchors {
+                top: positionSlider.bottom
+                horizontalCenter: positionSlider.horizontalCenter
+            }
+            color: config.secondaryTextColor
+            text: {
+                var minutes = Math.floor(audioPlayer.duration / 60000);
+                var seconds = Math.floor((audioPlayer.duration / 1000) % 60);
+                return minutes + ":" + (seconds < 10 ? "0" + seconds : seconds);
+            }
+            Connections {
+                target: audioPlayer
+                onDurationChanged: {
+                    var minutes = Math.floor(audioPlayer.duration / 60000);
+                    var seconds = Math.floor((audioPlayer.duration / 1000) % 60);
+                    trackTime.text = minutes + ":" + (seconds < 10 ? "0" + seconds : seconds);
+                }
+            }
+        }
+
         NextButton {
             id: nextButton
         }
