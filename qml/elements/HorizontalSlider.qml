@@ -17,7 +17,7 @@ Item {
         live: root.live 
         orientation: Qt.Horizontal
 
-        onMoved: root.moved
+        onMoved: root.moved()
 
         handle: Rectangle { width: 0; height: 0 }
 

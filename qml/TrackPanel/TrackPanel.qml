@@ -42,7 +42,6 @@ Item {
             from:   0.
             to:     1.
             value:  config.volume
-            live: false
             onMoved: {
                 config.volume = volumeSlider.value
                 audioPlayer.audioOutput.volume = volumeSlider.value
