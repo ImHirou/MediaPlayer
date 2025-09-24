@@ -28,7 +28,7 @@ Item {
             fillMode:   Image.PreserveAspectFit
         }
 
-        Slider {
+        VerticalSlider {
             id: volumeSlider
             anchors {
                 right:      parent.right
@@ -36,10 +36,12 @@ Item {
                 bottom:     parent.verticalCenter
                 margins:    8
             }
-            orientation: Qt.Vertical
+            width: 16
+            height: 200
             from:   0.
             to:     1.
             value:  config.volume
+            live: false
             onMoved: {
                 config.volume = volumeSlider.value
                 audioPlayer.audioOutput.volume = volumeSlider.value
@@ -48,7 +50,7 @@ Item {
                 if (!pressed) config.writeFile(true)
             }
         }
-        BetterSlider {
+        HorizontalSlider {
             id: positionSlider
             anchors {
                 horizontalCenter:   parent.horizontalCenter

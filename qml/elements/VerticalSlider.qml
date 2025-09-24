@@ -1,7 +1,6 @@
 import QtQuick
 import QtQuick.Controls
 
-
 Item {
     id: root
     property color backgroundColor: config.backgroundColor3
@@ -16,7 +15,7 @@ Item {
         to: root.to
         value: root.value
         live: root.live 
-        orientation: root.orientation
+        orientation: Qt.Vertical
 
         onMoved: root.moved
 
@@ -25,24 +24,21 @@ Item {
         background: Rectangle {
             anchors.fill: parent
             implicitHeight: 6
-            implicitWidth: 6
-            radius: (root.orientation === Qt.Horizontal ? height/2 : width/2)
+            radius: height/2 
             color: root.backgroundColor
             Rectangle {
-                anchors.fill: parent
-                width: (root.orientation === Qt.Horizontal ? parent.width * slider.position : parent.width)
-                height: (root.orientation === Qt.Horizontal ? parent.height : parent.height * slider.position)
+                anchors.bottom: parent.bottom
+                width: parent.width 
+                height: parent.height * slider.position 
                 radius: parent.radius
                 color: root.mainColor
             }
         }
     }
 
-    property alias orientation: slider.orientation
     property alias live: slider.live
     property alias value: slider.value
     property alias from: slider.from
     property alias to: slider.to
     property alias pressed: slider.pressed
 }
-
