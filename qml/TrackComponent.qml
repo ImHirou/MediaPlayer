@@ -40,45 +40,48 @@ import QtQuick.Controls
                 }
 
                 Image {
+                    id: image
                     anchors {
                         top:        parent.top
                         left:       parent.left
                         margins:    8
                     }
-                    width:  128
-                    height: 128
-                    source: item.icon
-                    cache: true
-                    smooth: true
-                    fillMode: Image.PreserveAspectFit
+                    width:      128
+                    height:     128
+                    source:     item.icon
+                    cache:      true
+                    smooth:     true
+                    fillMode:   Image.PreserveAspectFit
                 }
 
                 Text {
                     anchors {
                         top:        parent.top
                         right:      parent.right
+                        left:       image.right
                         margins:    8
                     }
-                    font.pixelSize: 20
-                    width: 200
-                    wrapMode: Text.Wrap
-                    horizontalAlignment: Text.AlignRight
-                    color: config.mainTextColor
-                    text: item.name
+                    font.pixelSize:         20
+                    width:                  200
+                    wrapMode:               Text.Wrap
+                    horizontalAlignment:    Text.AlignRight
+                    color:                  config.mainTextColor
+                    text:                   item.name
                 }
 
                 Text {
                     anchors {
                         right:      parent.right
+                        left:       image.right
                         bottom:     parent.bottom
                         margins:    8
                     }
-                    font.pixelSize: 20
-                    width: 200
-                    wrapMode: Text.Wrap
-                    horizontalAlignment: Text.AlignRight
-                    color: config.secondaryTextColor
-                    text: item.artist
+                    font.pixelSize:         20
+                    width:                  200
+                    wrapMode:               Text.Wrap
+                    horizontalAlignment:    Text.AlignRight
+                    color:                  config.secondaryTextColor
+                    text:                   item.artist
                 }
             }
         }
