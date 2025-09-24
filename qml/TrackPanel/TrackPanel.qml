@@ -16,6 +16,7 @@ Item {
         radius:         16
 
         Image {
+            id: image
             anchors {
                 top:                parent.top
                 horizontalCenter:   parent.horizontalCenter
@@ -32,9 +33,9 @@ Item {
             id: volumeSlider
             anchors {
                 right:      parent.right
-                top:        parent.top
-                bottom:     parent.verticalCenter
-                margins:    8
+                top:        image.top
+                bottom:     image.bottom
+                rightMargin:    12
             }
             orientation: Qt.Vertical
             from:   0.
@@ -56,8 +57,9 @@ Item {
         Slider {
             id: positionSlider
             anchors {
-                horizontalCenter:   parent.horizontalCenter
-                verticalCenter:     parent.verticalCenter
+                top: image.bottom
+                horizontalCenter: parent.horizontalCenter
+                margins: 12
             }
             height: 16
             width:  200
@@ -103,6 +105,7 @@ Item {
             anchors {
                 bottom: parent.bottom
                 horizontalCenter: parent.horizontalCenter
+                margins: 8
             }
             width: 32
             height: 32
@@ -129,6 +132,7 @@ Item {
             anchors {
                 top: positionSlider.bottom
                 horizontalCenter: positionSlider.horizontalCenter
+                margins: 8
             }
             color: config.secondaryTextColor
             text: {
@@ -148,14 +152,29 @@ Item {
 
         NextButton {
             id: nextButton
+            anchors {
+                bottom:     repeatButton.top
+                right:      parent.right
+                margins:    16
+            }
         }
 
         PreviousButton {
             id: previousButton
+            anchors {
+                bottom:     repeatButton.top
+                left:       parent.left
+                margins:    16
+            }
         }
 
         PlayButton {
             id: playButton
+            anchors {
+                horizontalCenter:   parent.horizontalCenter
+                bottom:             repeatButton.top
+                margins:            16
+            }
         }
     }
 }

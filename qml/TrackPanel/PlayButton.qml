@@ -3,11 +3,6 @@ import QtQuick.Controls
 import app
 
 Item {
-    anchors {
-        horizontalCenter: parent.horizontalCenter
-        bottom: parent.bottom
-        margins: 32
-    }
     width: 40
     height: 40
     CircleButton {

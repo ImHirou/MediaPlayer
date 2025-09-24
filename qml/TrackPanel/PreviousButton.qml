@@ -5,11 +5,6 @@ import app
 Item {
     width: 40
     height: 40
-    anchors {
-        bottom: parent.bottom
-        left: parent.left
-        margins: 32
-    }
     CircleButton {
         id: button
         anchors.fill: parent
