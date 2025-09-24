@@ -29,7 +29,7 @@ Item {
             fillMode:   Image.PreserveAspectFit
         }
 
-        Slider {
+        VerticalSlider {
             id: volumeSlider
             anchors {
                 right:      parent.right
@@ -37,10 +37,12 @@ Item {
                 bottom:     image.bottom
                 rightMargin:    12
             }
-            orientation: Qt.Vertical
+            width: 16
+            height: 200
             from:   0.
             to:     1.
             value:  config.volume
+            live: false
             onMoved: {
                 config.volume = volumeSlider.value
                 audioPlayer.audioOutput.volume = volumeSlider.value
@@ -48,13 +50,8 @@ Item {
             onPressedChanged: {
                 if (!pressed) config.writeFile(true)
             }
-            handle {
-                width: 0
-                height: 0
-            }
         }
-
-        Slider {
+        HorizontalSlider {
             id: positionSlider
             anchors {
                 top: image.bottom
@@ -78,24 +75,6 @@ Item {
                 onPositionChanged: {
                     if (!positionSlider.pressed) 
                         positionSlider.value = audioPlayer.position
-                }
-            }
-
-            handle {
-                width: 0
-                height: 0
-            }
-            background: Rectangle {
-                implicitHeight: 6
-                radius: height/2
-                color: config.backgroundColor3
-
-                Rectangle {
-                    width: parent.width * positionSlider.position
-                    height: parent.height
-                    radius: parent.radius
-                    color: config.primaryColor
-                    clip: true
                 }
             }
         }
